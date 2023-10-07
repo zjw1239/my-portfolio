@@ -1,0 +1,60 @@
+/*set variables for DRY code*/
+:root {
+    --font: monospace;
+}
+
+*{
+    background-color: grey;
+    font-family: monospace;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    margin: 2% 0;
+    font-size: 150%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style-type: none;
+    position: fixed;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 1200px;
+    margin: 2% auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #13293d;
+}
