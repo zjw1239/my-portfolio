@@ -1,12 +1,14 @@
 /*set variables for DRY code*/
 :root {
     --font: monospace;
+    --navy: #13293d;
 }
 
 *{
     background-color: grey;
-    font-family: monospace;
+    font-family: var(--font);
     color: white;
+    text-align: center;
 }
 
 body {
@@ -20,29 +22,39 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #13293d;
+    background-color: var(--navy);
+    width: auto;
+    padding: 0px;
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 300%;
+    background-color: var(--navy);
 }
 
 h2 {
     margin: 2% 0;
+    font-size: 200%;
+}
+
+h3 {
     font-size: 150%;
 }
 
 nav ul {
+    float: right;
     display: flex;
     justify-content: space-between;
     min-width: 300px;
     list-style-type: none;
-    position: fixed;
+    position: absolute;
+    background-color: var(--navy);
 }
 
 nav a {
     font-weight: bold;
     text-decoration: none;
+    background-color: var(--navy);
 }
 
 main {
@@ -56,5 +68,21 @@ footer {
     display: flex;
     justify-content: center;
     padding: 2%;
-    background-color: #13293d;
+    background-color: var(--navy);
+}
+
+footer nav ul {
+    display: flex;
+    align-items: right;
+    float: right;
+}
+
+#profile-pic {
+    max-width: fit-content;
+    border-radius: 50%;
+    align-items: center;
+}
+
+p {
+    display: flex;
 }
