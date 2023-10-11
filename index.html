@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="UTF-8">
-    <link rel="sylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Welcome to Zach's Portfolio!</title>
+<meta charset="UTF-8">
+<link rel="sylesheet" href="./assets/reset.css">
+<link rel="stylesheet" href="./assets/style.css">
+<title>Zach's Portfolio!</title>
 
 <body>
     <header>
         <!--HEADER ADD CSS STYLE FOR NAV LINKS-->
-        <h1>Hello, i'm Zach!</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Showcase</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-        <section>
-            <!--ADD PROFILE PICTURE LINK BELOW-->
-        </section>
-    </header>
-    <main>
-        <section id="profile-pic">
-            <img src="./assets/Screenshot_20230105_090742_Messages (1).jpg" alt="">
-            <h2>A Little About Me</h2>
-                    <p>Welcome! My name is Zach. Currently I am a Bootcamp student learning Web Design.
-                        Previously I have spent my time in the Trades learning different ways to fix and work on houses and buildings.
-                        I have worked with many different contractors and learned many different things. I have also spent some time with simple python coding as a hobby.
-                        I am hoping to make a career change into the Tech world starting with Web Development and wherever life takes me from there.
-                        In my free time I enjoy video games, longboarding, disc golf and hiking.
-                    </p>
-        </section>
-    </main>
-        <section>
-            <h2>Previous Work Showcase</h2>
+        <h1 id="home">Hello, i'm Zach!</h1>
+        <nav>
             <ul>
-                <!--LINK PREWORK URL BELOW-->
-                <li><a href=""></a>
-                    <img href="" alt="">
-                    <h3>Prework Study Guide</h3>
+                <li>
+                    <a href="#home">Home</a></button>
+                </li>
+                <li>
+                    <a href="#about-me">About Me</a></button>
+                </li>
+                <li>
+                    <a href="#previous-work">Showcase</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact</a>
                 </li>
             </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img class="profile-pic" src="./assets/Screenshot_20230105_090742_Messages (1).jpg" alt="picture of myself sitting in my truck">
+            <h2 id="about-me">A Little About Me</h2>
+            <p>Welcome! My name is Zach. Currently I am a Bootcamp student learning Web Design.
+                Previously I have spent my time in the Trades learning different ways to fix and work on houses and
+                buildings.
+                I have worked with many different contractors and learned many different things. I have also spent some
+                time with simple python coding as a hobby.
+                I am hoping to make a career change into the Tech world starting with Web Development and wherever life
+                takes me from there.
+                In my free time I enjoy video games, longboarding, disc golf and hiking.
+            </p>
+        </section>
+    </main>
+    <section>
+        <h2 id="previous-work">Previous Work</h2>
+            <div class="previous-work">
+                    <!--LINK PREWORK URL BELOW-->
+                <figure>
+                    <a href=" https://zjw1239.github.io/code-refactor/"><img class="screenshot-1" src="./assets/screencapture-zjw1239-github-io-code-refactor-2023-10-04-22_03_16.png" alt="Horiseon screenshot link. explains visibility tactics"></a>
+                        <figcaption>Module 1 Challenge</figcaption>
+                </figure>
+                <figure>
+                    <a href=" https://zjw1239.github.io/prework-study-guide/"><img class="screenshot-2" src="./assets/screencapture-zjw1239-github-io-prework-study-guide-2023-10-10-18_33_39.png" alt="Study guide screenshot link. some notes from the prework"></a>
+                        <figcaption>Prework Study Guide</figcaption>
+                </figure>
+            </div>
+        </section>
+    <section>
+        <h2 class="contact" id="contact-me">Contact Me</h2>
+        <ul class="contact-info">
+            <li>Email: winchelzachary@gmail.com</li>
+            <li>Phone: 555-555-5555</li>
+        </ul>
     </section>
 </body>
 <footer>
@@ -49,8 +68,9 @@
     <nav>
         <ul>
             <!--ADD CSS FOR NAV LINKS AND LINK THEM TO PAGE-->
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
         </ul>
     </nav>
 </footer>
+
 </html>
