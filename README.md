@@ -10,7 +10,11 @@ Thank you for visitin my Portfolio page! In this page you will find a few   diff
 
 ## Screenshot of launched page
 
+![Alt text](assets/screencapture-zjw1239-github-io-my-portfolio-2023-10-14-17_49_13.png)
+
 ## Link to launched portfolio
+
+https://zjw1239.github.io/my-portfolio/
 
 ## Links to previous work
 
